@@ -2,19 +2,19 @@ Daemon Start
 ==
 
 ```
-$ ./amz_crawlerd.py start
+$ ./sampled.py start
 ```
 Daemon Stop
 ==
 
 ```
-$ ./amz_crawlerd.py stop
+$ ./sampled.py stop
 ```
 
 or
 
 ```
-kill `cat run/amz_crawlerd.pid`
+kill `cat run/sampled.pid`
 ```
 
 Graceful Shutdown
@@ -23,8 +23,8 @@ Graceful Shutdown
 Kill the daemon with SIGINT (-2) to notify
 
 ```
-$ kill -2 `cat run/amz_crawlerd.pid`
-$ tail log/amz_crawlerd.out
+$ kill -2 `cat run/sampled.pid`
+$ tail log/sampled.out
 running 0
 running 1
 running 2
